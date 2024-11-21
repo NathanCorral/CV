@@ -1,0 +1,115 @@
+%\textit{}%%%%%%%%%%%%%%%
+% This CV example/template is based on my own
+% CV which I (lamely attempted) to clean up, so that
+% it's less of an eyesore and easier for others to use.
+%
+% LianTze Lim (liantze@gmail.com)
+% 23 Oct, 2022
+%
+\documentclass[a4paper,skipsamekey,11pt,english]{curve}
+
+% Uncomment to enable Chinese; needs XeLaTeX
+% \usepackage{ctex}
+
+% Reduce spacing in elements on the itemize list
+%\usepackage{enumitem} % Breaks the compile
+\input{src/macros.tex}
+\newcommand{\description}{}
+\usepackage{enumitem}
+
+\usepackage{xspace} % for handling spaces after commands
+
+
+% Default biblatex style used for the publication list is APA6. If you wish to use a different style or pass other options to biblatex you can change them here. 
+\PassOptionsToPackage{style=ieee,sorting=ydnt,uniquename=init,defernumbers=true}{biblatex}
+
+% Most commands and style definitions are in settings.sty.
+\usepackage{settings}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Overleaf Example},
+	pdfpagemode=FullScreen,
+}
+
+% If you need to further customise your biblatex setup e.g. with \DeclareFieldFormat etc please add them here AFTER loading settings.sty. For example, to remove the default "[Online] Available:" prefix before URLs when using the IEEE style:
+\DefineBibliographyStrings{english}{url={\textsc{url}}}
+
+%% Only needed if you want a Publication List
+\addbibresource{src/own-bib.bib} 
+
+% Change the fonts if you want
+\ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
+\usepackage{fontspec} 
+%% You can use \setmainfont etc; I'm just using these font packages here because they provide OpenType fonts for use by XeLaTeX/LuaLaTeX anyway
+%\usepackage[p,osf,swashQ]{cochineal}
+\usepackage[medium,bold]{cabin}
+\usepackage[varqu,varl,scale=0.9]{zi4}
+\else % If you're using pdfLaTeX or latex
+\usepackage[T1]{fontenc}
+%\usepackage[p,osf,swashQ]{cochineal}
+\usepackage{cabin}
+\usepackage[varqu,varl,scale=0.9]{zi4}
+\fi
+
+% Change the page margins if you want
+% \geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm}
+
+% Change the colours if you want
+%  \definecolor{SwishLineColour}{HTML}{00FFFF}
+\definecolor{MarkerColour}{HTML}{0000CC}
+
+% Change the item prefix marker if you want
+% \prefixmarker{$\diamond$}
+
+%% Photo is only shown if "fullonly" is included
+\includecomment{fullonly}
+% \excludecomment{fullonly}
+
+\usepackage{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\leftheader{%
+	{\LARGE\bfseries\sffamily Nathan Corral}
+	
+	\vspace{2mm}
+	\makefield{\faEnvelope[regular]}{\href{mailto:nathan.b.corral@gmail.com}{\texttt{nathan.b.corral@gmail.com}}}
+	\makefield{\faPhone}{+49 160 9175 1918}  
+	
+	%% Next line
+	\makefield{\faGlobe}{\url{https://nathancorral.com}}
+	\makefield{~~~~\faGithub}{~~\href{https://github.com/NathanCorral}{NathanCorral}}
+	
+	
+	\makefield{\faLinkedin}{\url{www.linkedin.com/in/nathan-corral}}
+	
+	\vspace{2mm}
+
+	\par \qquad As a Computer Engineer with a master’s specialization in Computer Vision and Robotics, I am eager to advance applied automation through state-of-the-art deep learning solutions.
+}
+
+\rightheader{~}
+\begin{fullonly}
+	\photo[l]{resources/CorralProfessional}
+	\photoscale{0.15} % 0.13 old, 3 histories do not fit on main page
+\end{fullonly}
+
+\title{Curriculum Vitae}
+
+\begin{document}
+	\makeheaders[c]
+	\vspace{-4mm}
+	\renewcommand{\arraystretch}{.5}
+	\makerubric{src/employment_history}
+	\makerubric{src/education}
+	\makerubric{src/thesis}
+	\makerubric{src/projects}
+	\makerubric{src/publications}
+	\renewcommand{\arraystretch}{.8}
+	\makerubric{src/skills}
+
+\end{document}
