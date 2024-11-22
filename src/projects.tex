@@ -1,56 +1,47 @@
-\begin{rubric}{Projects}
+\begin{rubric}{Projekte}
 
-\entry*[2024] \textbf{ROS 2 Whisper} \hfill \href{https://github.com/NathanCorral/ros2_whisper/blob/dev-code-cleanup/doc/harry_potter_sample.gif}{Video}, \href{https://github.com/NathanCorral/ros2_whisper/tree/dev-code-cleanup}{\faGithub Source} \newline
-As an extension of this open source project, I implemented boarder-less, live audio transcription. Written in C++, my code contribution emphasizes: \newline
-\vspace{\CVItemizeHeaderSpacing} \begin{itemize}
-	\setlength{\itemsep}{\CVItemizeSpacing}
-	\item Scalability, using both inheritance and composition in object-oriented programming behavior.
-	\item Efficiency, through intentional memory management, thread-safe callbacks and work splitting across multiple nodes.
-	\item Simplicity, in the well thought-out implementation of complex merging algorithms.
-\end{itemize}
+\entry*[2024] \textbf{ROS 2 Whisper} \hfill \href{https://github.com/NathanCorral/ros2_whisper/blob/dev-code-cleanup/doc/harry_potter_sample.gif}{Video}, \href{https://github.com/NathanCorral/ros2_whisper/tree/dev-code-cleanup}{\faGithub Source} \newline  
+Als Erweiterung dieses Open-Source-Projekts habe ich eine grenzenlose, Live-Audiotranskription implementiert. Geschrieben in C++ legt mein Codebeitrag den Fokus auf: \newline  
+\vspace{\CVItemizeHeaderSpacing} \begin{itemize}  
+	\setlength{\itemsep}{\CVItemizeSpacing}  
+	\item Skalierbarkeit:  Through using both inheritance and composition in object-oriented programming behavior.
+	\item Effizienz:  Through intentional memory management, thread-safe callbacks and work splitting across multiple nodes.
+	\item Einfachheit in der durchdachten Implementierung complex merging algorithms.
+\end{itemize}  
 
-\entry*[2024] \textbf{ROS 2 Computer Vision} \hfill \href{https://github.com/NathanCorral/ROS-HF-Vision/blob/main/doc/gifs/ex_german_roads.gif}{Video}, \href{https://github.com/NathanCorral/ROS-HF-Vision/tree/main}{\faGithub Source} \newline
-Running multiple computer vision models (DETR, Maskformer) trained across different datasets/tasks on a live camera feed introduces several implementation challenges. This Python repository presents a solution for: \newline
-\vspace{\CVItemizeHeaderSpacing} \begin{itemize}
-	\setlength{\itemsep}{\CVItemizeSpacing}
-	\item Downloading and running state-of-the-art models from Hugging Face as asynchronous ROS 2 nodes.
-	\item Hosting a label server for re-addressing model outputs into a global database.
-	\item Displaying segmentation masks and bounding boxes as a Matplotlib animation.
-	\item Publishing dataset images for repeatable evaluation of CV models.
-\end{itemize}
+\entry*[2024] \textbf{ROS 2 Computer Vision} \hfill \href{https://github.com/NathanCorral/ROS-HF-Vision/blob/main/doc/gifs/ex_german_roads.gif}{Video}, \href{https://github.com/NathanCorral/ROS-HF-Vision/tree/main}{\faGithub Source} \newline  
+Das Ausführen mehrerer Computer-Vision-Modelle (DETR, Maskformer), die für verschiedene Datensätze/Aufgaben trainiert wurden, auf einem Live-Kamerastream stellt mehrere Implementierungsherausforderungen dar. Dieses Python-Repository bietet eine Lösung für: \newline  
+\vspace{\CVItemizeHeaderSpacing} \begin{itemize}  
+	\setlength{\itemsep}{\CVItemizeSpacing}  
+	\item Das Herunterladen und Ausführen von State-of-the-Art-Modellen aus Hugging Face als asynchrone ROS 2 Nodes.  
+	\item Das Hosten eines Label Server, um Modell-Ausgaben in einer globalen Datenbank neu zu adressieren.  
+	\item Die Anzeige von Segmentation Masks und Bounding Boxes als Matplotlib Animations.  
+	\item Das Veröffentlichen von Datensatzbildern zur wiederholbaren Evaluierung von CV-Modellen.  
+\end{itemize}  
 
 \entry*[2024] \textbf{Semantic Search using Facebook AI Similarity (FAISS)} \hfill \href{https://github.com/NathanCorral/Hugging-Face-FAISS-Semantic-Search}{\faGithub Source} \newline
-\qquad This project implements the first steps in Retrieval-Augmented Generation (RAG) (stopping at "Generation").  I perform web scraping, dataset/query embedding, and similarity scoring to reference data from a natural language query.  
-%\vspace{\CVItemizeHeaderSpacing} \begin{itemize}
-%	\setlength{\itemsep}{\CVItemizeSpacing}
-%	\item Web-scraping the Hugging-Face Github to create a dataset of issues.
-%	\item Using a pre-trained Large Language Model to create embeddings over text in the issues.
-%	\item Computing the embedding of a natural language query.
-%	\item Retrieval of similar issues by computing the Faiss.
-%\end{itemize}
-
+Dieses Projekt implementiert die ersten Schritte der Retrieval-Augmented Generation (RAG) (endet vor „Generation“). Ich führe Web-Scraping, Datensatz-/Abfrage-Einbettung und Ähnlichkeitsbewertung durch, um Dateneinträge basierend auf einer Abfrage in natürlicher Sprache abzurufen.
 
 \begin{comment}
-\entry*[2021] \textbf{Temporal Convolutional Network} \newline
-As part of a class project, we re-implemented the Multi-Stage Temporal Convolutional Network\footnote{Y. Abu Farha et al., "MS-TCN: Multi-Stage Temporal Convolutional Network for Action Segmentation." CVPR 2019.} in PyTorch.  This project achieved: \newline
-\vspace{\CVItemizeHeaderSpacing} \begin{itemize}
-	\setlength{\itemsep}{\CVItemizeSpacing}
-	\item Understanding state-of-the-art (2019) computer vision networks on video action classification.
-	\item Training and testing the model on a subset of an actively used dataset ($\approx$30\% of the Breakfast Actions Dataset).
-	\item Verifying results reported in the paper (66\% accuracy).
-\end{itemize}
+\entry*[2021] \textbf{Temporal Convolutional Network} \newline  
+Im Rahmen eines Klassenprojekts haben wir das Multi-Stage Temporal Convolutional Network\footnote{Y. Abu Farha et al., "MS-TCN: Multi-Stage Temporal Convolutional Network for Action Segmentation." CVPR 2019.} in PyTorch neu implementiert. Dieses Projekt erreichte: \newline  
+\vspace{\CVItemizeHeaderSpacing} \begin{itemize}  
+	\setlength{\itemsep}{\CVItemizeSpacing}  
+	\item Verständnis für state-of-the-art (2019) Computer-Vision-Netzwerke zur Klassifikation von Videoaktionen.  
+	\item Training und Testen des Modells auf einem Teil eines aktiv genutzten Datensatzes ($\approx$30 \% des Breakfast Actions Dataset).  
+	\item Verifizierung der im Paper angegebenen Ergebnisse (66 \% Genauigkeit).  
+\end{itemize}  
 
-
-\entry*[2016] \textbf{Tower of Hanoi} \newline
-I programmed a robot arm to play the Tower of Hanoi game with full automation.  The project goals consisted of:  \newline
-\vspace{\CVItemizeHeaderSpacing} \begin{itemize}
-	\setlength{\itemsep}{\CVItemizeSpacing}
-	\item Calculating the Inverse Kinematics for a ROS Controlled Rhino RX2 arm, and programming them in C++.
-	\item Attaching a down-facing camera and building a computer vision node to identify blocks in the robot plane.
-	\item Establishing tower centers and programming the Tower of Hanoi game logic.
-\end{itemize}
-
+\entry*[2016] \textbf{Tower of Hanoi} \newline  
+Ich programmierte einen Roboterarm, um das Spiel Tower of Hanoi vollständig automatisiert zu spielen. Die Projektziele umfassten: \newline  
+\vspace{\CVItemizeHeaderSpacing} \begin{itemize}  
+	\setlength{\itemsep}{\CVItemizeSpacing}  
+	\item Berechnung der inversen Kinematik für einen ROS-gesteuerten Rhino-RX2-Arm und deren Programmierung in C++.  
+	\item Anbringung einer nach unten gerichteten Kamera und Entwicklung eines Computer-Vision-Nodes zur Identifizierung von Blöcken in der Roboter-Ebene.  
+	\item Festlegung der Turmzentren und Programmierung der Spiellogik von Tower of Hanoi.  
+\end{itemize}  
 \end{comment}
+
 
 \end{rubric}
 
