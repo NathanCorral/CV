@@ -59,7 +59,8 @@
 % \geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm}
 
 % Change the colours if you want
-%  \definecolor{SwishLineColour}{HTML}{00FFFF}
+%\definecolor{SwishLineColour}{HTML}{00FFFFF}
+\definecolor{SwishLineColour}{HTML}{AAAAAA}
 \definecolor{MarkerColour}{HTML}{0000CC}
 
 % Change the item prefix marker if you want
@@ -84,11 +85,13 @@
 	\makefield{\faGlobe}{\url{https://nathancorral.com}}
 	\makefield{~~~~\faGithub}{~~\href{https://github.com/NathanCorral}{NathanCorral}}
 	
-	\makefield{\faLinkedin}{\url{www.linkedin.com/in/nathan-corral}}
+	\makefield{\faMapMarker}{Bonn, Nordrhein-Westfalen} \makefield{\faLinkedin}{\url{www.linkedin.com/in/nathan-corral}}
+	
+	%\makefield{\faMapMarker}{Bonn, Deutschland} \qquad ~~~~ \makefield{\faLinkedin}{\url{www.linkedin.com/in/nathan-corral}}
 	
 	\vspace{2mm}
 
-	\par \qquad Als Computer Engineer mit einem Master-Schwerpunkt in Computer Vision und Robotik bin ich motiviert, die angewandte Automatisierung durch modernste Deep-Learning-Lösungen voranzutreiben.
+	\par \qquad Als Computer-Ingenieur mit einem Master-Schwerpunkt in Computer Vision und Robotik bin ich auf der Suche nach Vollzeitpositionen im Bereich KI und ML.
 }
 
 \rightheader{~}
@@ -102,12 +105,11 @@
 \begin{document}
 	\makeheaders[c]
 	\vspace{-4mm}
-	\renewcommand{\arraystretch}{.5}
+	%\renewcommand{\arraystretch}{.5}
 	\makerubric{src/employment_history}
 	\makerubric{src/education}
-	\makerubric{src/thesis}
 	\makerubric{src/projects}
 	\makerubric{src/publications}
-	\renewcommand{\arraystretch}{.8}
+	\renewcommand{\arraystretch}{1}
 	\makerubric{src/skills}
 \end{document}
