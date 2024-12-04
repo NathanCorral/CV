@@ -1,0 +1,148 @@
+
+
+\documentclass[11pt,a4paper,skipsamekey]{moderncv}      
+\usepackage[english]{babel}
+
+
+
+\moderncvstyle{classic}                            
+\moderncvcolor{green}                            
+
+% character encoding
+\usepackage[utf8]{inputenc}                     
+\usepackage{comment}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+% personal data
+\name{Nathan}{Corral}
+\address{Frankenweg 26A 53225, Bonn}
+\phone[mobile]{+49 160 9178 1918}               
+\email{nathan.b.corral@gmail.com}                             
+
+
+\begin{document}
+	
+%\recipient{To:}{Fraunhofer Institute \\ Nobelstraße 12 \\ 70569 Stuttgart}	
+\recipient{To:}{Fraunhofer Institute \\ Nobelstraße 12, 70569 Stuttgart}
+\date{\today}
+\opening{Dear Johannes Kienle,}
+\closing{Best Regards,}
+%\enclosure[Attachment]{CV}
+\makelettertitle
+
+\par
+I am excited to apply for the Software Engineer position for Professional Outdoor Service Robots (Req. Num. 74030) at Fraunhofer.
+My aspiration is to grow into a software architect, and this role offers a clear path through contributing to the cutting-edge robotics developed by Fraunhofer.
+Over the past year, I have completed two software projects that demonstrate my ability to design scalable architectures, and I am eager to bring this experience to your robotics ecosystem.
+
+\par
+I enhanced the ROS 2 Whisper open-source project by adding live transcription capabilities.
+This involved restructuring the usage of Whisper.cpp (OpenAI's speech-to-text model in C++) to enable both context preservation and frequent updates.
+A threaded post-processing node was then added to align and merge the text, resulting in robust performance and efficiency—skills directly applicable to maintaining the reliability of the CURT ecosystem.
+
+\par
+I designed a pipeline for deploying multiple Hugging Face models on a live camera feed, mapping model outputs to a unified label framework.
+The extendable architecture supports on-demand visualization of bounding boxes and pixel masks, as demonstrated by simultaneously running DETR and Maskformer models.
+This project highlights my ability to integrate complex systems—a core requirement for Fraunhofer's professional service robots.
+
+\par
+%I am well-prepared to manage Continuous Integration (CI) tasks, drawing on over 10 years of experience using Linux (Ubuntu) as my primary development environment.
+I am well-prepared to manage Continuous Integration (CI) tasks, drawing on my Computer Engineering background and 10 years of experience using Linux (Ubuntu).
+My prior roles have provided me with experience collaborating with interdisciplinary teams of engineers and physicists.
+Additionally, as a second author on a publication in Personalized Robot Navigation, I contributed to advancements in autonomous navigation, including generating simulation-based training data and deploying these systems in real-world scenarios.
+
+\par
+Working within the CURT framework presents an exciting opportunity to contribute to the development of innovative robotic systems.
+I deeply respect Fraunhofer's commitment to applied research and its transformative role in advancing robotics.
+This position aligns well with my background and aspirations, and I would be honored to bring my skills to your team.
+
+\par
+Thank you for considering my application.
+I look forward to the opportunity to discuss how I can contribute to Fraunhofer's projects.
+
+\begin{comment}
+	% SECOND DRAFT %
+	\par
+	I am excited to apply for the Software Engineer position for Professional Outdoor Service Robots (Req. Num. 74030) at Fraunhofer.  
+	My asperation is to grow into a software architect, and this role offers a clear path by contributing to the cutting-edge robotics developed by Fraunhofer.  
+	Over the past year, I have completed two software projects that demonstrate my ability to design scalable architectures, and I am eager to bring this experience to your robotics ecosystem.  
+	
+	\par
+	I enhanced the ros2\_whisper open-source project by adding live transcription capabilities.  
+	This involved restructuring the usage of Whisper.cpp (OpenAI's speach-to-text-model in c++), to enable both context preservation and frequent updates.  
+	A threaded post-processing node was then added to align and merge the text, resulting in robust performance and efficiency.  
+	Skills directly applicable to maintaining the reliability of the CURT ecosystem.  
+	
+	\par
+	I designed a pipeline for deploying multiple Hugging Face models on a live camera feed, mapping model outputs to a unified label framework.  
+	The extendable architecture supports on-avaiable visualization of bounding boxes and pixel masks, as demonstrated by simultaneously running DETR and Maskformer models.  
+	This project highlights my ability to integrate complex systems—a core requirement for Fraunhofer's professional service robots.  
+	
+	\par
+	I am well-prepared to manage Continuous Integration (CI) tasks, drawing on over 10 years of using Linux (Ubuntu) as my primary development environment.  
+	My prior role in embedded systems gives me experience collaborating with interdisciplinary teams of engineers and physicists.  
+	Additionally, as a second author on a publication in Personalized Robot Navigation, I contributed to advancements in autonomous navigation, including generating simulation-based training data and real-world deployment.  
+	
+	\par
+	Working within the CURT framework presents an exciting opportunity to contribute to the development of innovative robotic systems.  
+	I deeply respect Fraunhofer's commitment to applied research and its transformative role in advancing robotics.  
+	This position aligns well with my background and aspirations, and I would be honored to bring my skills to your team.  
+	
+	\par
+	Thank you for considering my application.  
+	I look forward to the opportunity to discuss how I can contribute to Fraunhofer's projects.  
+\end{comment}
+	
+	
+	
+	
+
+\begin{comment}
+% FIRST DRAFT %
+
+% Intro
+I am very interested in the position of Software Engineer for Professional Outdoor Service Robots at Fraunhofer.  
+My aspiration is to grow into a software architect role, and this position offers an excellent opportunity to develop in that direction, particularly in AI and robotics.  
+Over the last year, I have completed two software projects which demonstrate my aptitude towards software architecture development and what would make me a valuable software engineer. 
+% -- or --
+% Over the past year, I have completed two software projects that demonstrate my ability to contribute to this role.
+
+% ros2 whisper
+I extended the ros2\_whisper open source project by adding a feature to perform live transcription.  
+This required re-structuring the project, which previously applied the wisper.cpp engine (OpenAI's speach-to-text-model in c++) over a lightly-overlapping audio data chunk.  
+I made this overlap very large, for example using twenty seconds of previously seen audio and just one second of new audio data.  
+This allows frequent updates while maitining context in the audio.  
+I then added a post-processed node, which aligns and merges the new incomming text with what was previously seen.  
+These design and architecture changes, enabled multi-threaded audio transcription.
+
+% ros2 cv
+I also authored a pipline for running multiple Hugging Face (HF) models on a live camera feed.
+The HF models subscribe to the camera feed and then map their outputs to a unified label landscape. 
+The visualization node subscribes to the camera image, bounding box, or pixel mask, which it then aligns and displays as a MatPlotLib animation. 
+This architecture is extendable, shown by simotaniously running the DETR (bounding boxes) and Maskformer (per-pixel mask) computer vision models on a live camera feed.  
+
+% Discuss job 
+I am prepared to handle elements of Continuous Integration (CI) in this position.  
+I have worked primaraly in the linux environment (ubuntu) since starting my bachlors, giving me 10 years of practice.
+My work experience in Embedded Systems has given me success while working in interdisciplinary teams, in the past with Electrical Engineers and Physists. 
+I strive to produced useful documentation.  % Possibly omit
+In research, I have contributed (as 2nd author) to a publication in the field of Personalized Robot Navigation, which is an specification of autonomous navigtation.  % Possibly omit
+In this research role, I also used a photo-realistic simiulator to generate training data. 
+
+% Final paragraph
+Working within the CURT framework would provide valuable experience in maintaining and developing software for real robots. 
+I learned about Fraunhofer through my master's thesis advisor, Dr. Christian Bauckhage, and I admire the organization's leadership in applied research. 
+This position aligns well with my experience and goals, and it would be an honor to join your team.
+
+% Closing
+Thank you for considering my application. 
+I look forward to the opportunity to discuss how I can contribute to Fraunhofer's projects.		
+\end{comment}
+	
+\vspace{0.5cm}
+	
+\makeletterclosing
+	
+\end{document}
