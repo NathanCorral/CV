@@ -1,34 +1,29 @@
 \begin{rubric}{Projects}
 
-\entry*[2024] \textbf{ROS 2 Whisper} \hfill \href{https://github.com/ros-ai/ros2_whisper/blob/main/doc/harry_potter_sample.gif}{Video}, \href{https://github.com/ros-ai/ros2_whisper}{\faGithub Source} \newline
-As an extension of this open source project, I implemented boarder-less, live audio transcription. My contribution has led to me being an active maintainer in this project.  Written in C++, the code emphasizes: \newline
-\vspace{\CVItemizeHeaderSpacing} \begin{itemize}
+\entry*[] \textbf{ROS 2 Whisper} \hfill 2024 \newline
+\emph{Maintainer} \hfill  \href{https://github.com/ros-ai/ros2_whisper/blob/main/doc/harry_potter_sample.gif}{Video}, \href{https://github.com/ros-ai/ros2_whisper}{\faGithub Source} \newline
+\vspace{\CVItemizeHeaderSpacing} \begin{itemize}[leftmargin=*, rightmargin=1cm]
 	\setlength{\itemsep}{\CVItemizeSpacing}
-	\item Scalability, using both inheritance and composition in object-oriented programming behavior.
-	\item Efficiency, through intentional memory management, thread-safe callbacks and work splitting across multiple nodes.
-	\item Simplicity, in the well thought-out implementation of complex merging algorithms.
+	\item Extended this open source project to support boarder-less, live transcription.
+	\item Implemented the C++ code to place special attention on code efficiency and scalability.
 \end{itemize}
 
-\entry*[2024] \textbf{ROS 2 Computer Vision} \hfill \href{https://github.com/NathanCorral/ROS-HF-Vision/blob/main/doc/gifs/ex_german_roads.gif}{Video}, \href{https://github.com/NathanCorral/ROS-HF-Vision/tree/main}{\faGithub Source} \newline
-Running multiple computer vision models (DETR, Maskformer) trained across different datasets/tasks on a live camera feed introduces several implementation challenges. This Python repository presents a solution for: \newline
-\vspace{\CVItemizeHeaderSpacing} \begin{itemize}
+\entry*[] \textbf{ROS 2 Computer Vision} \hfill 2024 \newline
+\emph{Author} \hfill \href{https://github.com/NathanCorral/ROS-HF-Vision/blob/main/doc/gifs/ex_german_roads.gif}{Video}, \href{https://github.com/NathanCorral/ROS-HF-Vision/tree/main}{\faGithub Source} \newline
+\vspace{\CVItemizeHeaderSpacing} \begin{itemize}[leftmargin=*, rightmargin=1cm]
 	\setlength{\itemsep}{\CVItemizeSpacing}
-	\item Downloading and running state-of-the-art models from Hugging Face as asynchronous ROS 2 nodes.
-	\item Hosting a label server for re-addressing model outputs into a global database.
-	\item Displaying segmentation masks and bounding boxes as a Matplotlib animation.
-	\item Publishing dataset images for repeatable evaluation of CV models.
+	\item Designed a ROS 2 pipeline to run multiple Computer Vision (CV) tasks (Object Detection, Per-Pixel Segmentation) in parallel.  
+	\item Automatically download modern CV models (such as DETR, Maskformer).  
+	\item Re-index the model output labels, which may be trained on different datasets, into a universal database.  
+	\item Run the pipeline on both live camera feed and a dataset, which allowed time comparisons between the asynchronous running of multiple models.
 \end{itemize}
 
-\entry*[2024] \textbf{Semantic Search using Facebook AI Similarity (FAISS)} \hfill \href{https://github.com/NathanCorral/Hugging-Face-FAISS-Semantic-Search}{\faGithub Source} \newline
-\qquad This project implements the first steps in Retrieval-Augmented Generation (RAG) (stopping at "Generation").  I perform web scraping, dataset/query embedding, and similarity scoring to lookup data from a natural language query.  
-%\vspace{\CVItemizeHeaderSpacing} \begin{itemize}
-%	\setlength{\itemsep}{\CVItemizeSpacing}
-%	\item Web-scraping the Hugging-Face Github to create a dataset of issues.
-%	\item Using a pre-trained Large Language Model to create embeddings over text in the issues.
-%	\item Computing the embedding of a natural language query.
-%	\item Retrieval of similar issues by computing the Faiss.
-%\end{itemize}
-
+\entry*[] \textbf{Semantic Search using Facebook AI Similarity (FAISS)} \hfill 2024 \newline \emph{Author} \hfill \href{https://github.com/NathanCorral/Hugging-Face-FAISS-Semantic-Search}{\faGithub Source} \newline
+\vspace{\CVItemizeHeaderSpacing} \begin{itemize}[leftmargin=*, rightmargin=1cm]
+	\setlength{\itemsep}{\CVItemizeSpacing}
+	\item Implemented the first steps in Retrieval-Augmented Generation (ending before "Generation").
+	\item Programmed web-scraping, dataset embedding, and similarity comparisons to recover matches in the dataset from a natural language query.
+\end{itemize}
 
 \begin{comment}
 \entry*[2021] \textbf{Temporal Convolutional Network} \newline
