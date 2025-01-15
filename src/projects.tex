@@ -6,7 +6,7 @@
 	\setlength{\itemsep}{\CVItemizeSpacing}
 	\item Extended this open source project to support boarder-less, live transcription -- leading the the release of version 1.4.
 	\item Implemented the C++ code to place special attention on code efficiency and scalability.
-	\item Further, I deployed this onto an Nvidia Jetson Orin NX for continuous audio transcription.
+	\item Deployed onto an Nvidia Jetson Orin NX for continuous audio transcription.
 \end{itemize}
 
 \entry*[] \textbf{ROS 2 Computer Vision} \hfill 2024 \newline
@@ -14,11 +14,11 @@
 \vspace{\CVItemizeHeaderSpacing} \begin{itemize}[leftmargin=*, rightmargin=1cm]
 	\setlength{\itemsep}{\CVItemizeSpacing}
 	\item Designed a ROS 2 pipeline to run multiple Computer Vision (CV) tasks (Object Detection, Per-Pixel Segmentation) in parallel.  
-	\item Automatically download modern CV models (such as DETR, Maskformer).  
-	\item Re-index the model output labels, which may be trained on different datasets, into a universal database.  
+	%\item Automatically download modern CV models (such as DETR, Maskformer).  
+	\item Re-index the model output labels, which may be trained on different datasets, into a universal database using NoSQL.  
 	\item Run the pipeline on both live camera feed and a dataset, which allowed time comparisons between the asynchronous running of multiple models.
 \end{itemize}
-
+\begin{comment}
 \entry*[] \textbf{Semantic Search using Facebook AI Similarity (FAISS)} \hfill 2024 \newline \emph{Author} \hfill \href{https://github.com/NathanCorral/Hugging-Face-FAISS-Semantic-Search}{\faGithub Source} \newline
 \vspace{\CVItemizeHeaderSpacing} \begin{itemize}[leftmargin=*, rightmargin=1cm]
 	\setlength{\itemsep}{\CVItemizeSpacing}
@@ -26,7 +26,7 @@
 	\item Programmed web-scraping, dataset embedding, and similarity comparisons to recover matches in the dataset from a natural language query.
 \end{itemize}
 
-\begin{comment}
+
 \entry*[2021] \textbf{Temporal Convolutional Network} \newline
 As part of a class project, we re-implemented the Multi-Stage Temporal Convolutional Network\footnote{Y. Abu Farha et al., "MS-TCN: Multi-Stage Temporal Convolutional Network for Action Segmentation." CVPR 2019.} in PyTorch.  This project achieved: \newline
 \vspace{\CVItemizeHeaderSpacing} \begin{itemize}
