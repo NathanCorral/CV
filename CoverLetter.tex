@@ -1,0 +1,110 @@
+
+\documentclass[11pt,a4paper,skipsamekey]{moderncv}
+\usepackage[english]{babel}
+
+
+
+\moderncvstyle{classic}                            
+\moderncvcolor{green}                            
+
+% character encoding
+\usepackage[utf8]{inputenc}                     
+\usepackage{comment}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+% personal data
+\name{Nathan B.}{Corral}
+\address{Frankenweg 26A 53225, Bonn}
+\phone[mobile]{+49 160 9178 1918}               
+\email{nathan.b.corral@gmail.com}                             
+
+\begin{document}
+	\recipient{To:}{Apple \\ AI and Machine Learning \\ Aachen, Germany }
+	\date{\today}
+	\opening{Dear Apple Recruiting Team,}
+	\closing{Best Regards,}
+	%\enclosure[Attachment]{CV}
+	\makelettertitle
+	
+	
+	My Master’s degree in Deep Learning and a recent open-source project in audio transcription make me an excellent candidate for the Machine Learning Research (Speech), DMLI position at Apple ML. With a strong foundation in both research and practical deployment, I am eager to contribute to cutting-edge speech translation technologies.
+	
+	In my Master’s thesis, I introduced a transformer-based deep learning network for the prediction of multiple possible futures. This unsupervised method learns a distribution over potential future states, with applications in areas such as speech translation. This experience, which involved deep learning toolkits and stochastic modeling, provided me with a solid foundation in both theoretical and applied machine learning. The project demonstrated my ability to approach complex problems and develop innovative solutions, as well as to evaluate these solutions against competing methods.
+	
+	
+	Recently, I extended the open-source project ROS 2 Whisper to perform streaming audio transcription, leading to version 1.4 and earning admin rights to maintain the codebase. 
+	Problems in solving a continuous streaming-transcription task, such as mid-word-breaks and loss of context, could be also present in a speech translation system.  
+	I addressed challenges such as mid-word breaks and loss of context using a ring-buffer to hold audio data, performing transcription in regular intervals, and aligning updates with the existing text using a substring matching algorithm. Implemented in modern C++ with multithreading and design patterns (at different parts; composition, inheritance, and templates), my solution was efficient and scalable. 
+	While deployed on an NVIDIA Jetson Orin, it used Whisper CPP, designed for Apple silicon, showcasing my commitment to real-world deployment and experience with speech recognition technologies.
+	
+	These experiences, spanning research and engineering, have equipped me to contribute to developing state-of-the-art machine translation solutions at Apple. 
+	I am eager to collaborate with your talented team to advance the field and tackle real-world challenges.
+	
+	Thank you for considering my application. 
+	I look forward to discussing how I can contribute to the future of speech translation at Apple.
+	
+	\begin{comment}
+		
+
+	My masters degree in deep learning and my recent open source project in continuous audio transcription make me an excellent candidate for the Machine Learning Research (Speech), DMLI position at Apple ML.  
+	
+	My thesis introduced a novel transformer-based deep learning network for prediction of multiple futures.  
+	The method, which learned (unsupervised) a distribution over possible futures has potential for speech translation as well as gave me experience in deep learning toolkits and stochastic modeling.  
+	
+	I recently extended on an open source project (https://github.com/ros-ai/ros2\_whisper) to perform streaming audio transcription, leading to release of version 1.4 and granting me admin rights to maintain the code base.  
+	Problems in solving a continuous streaming-transcription task, such as mid-word-breaks and loss of context, could be also present in a speech translation system.  
+	I overcame these by holding audio data in a ring-buffer, transcribing all data in the buffer at regular intervals, and performing sub-string matching to align and update the existing transcript.  
+	My solution was efficient, being coded in modern C++ with multiple threads, and offered great scalability/maintainability, using at different parts the coding paradigms of composition, inheritance, and templates.  
+	While the device I chose to deploy on was an Nivida Jetson Orin, the back-end transcription network I used was Whisper CPP, which was primarily designed for Apple silicon.  
+	This demonstrates my commitment to real-world product deployment, my ability to formulate problems and implement solutions, and my experience working with existing speech recognition technologies.  
+	
+	These two experiences prepare me for developing state-of-the art machine translation solutions at Apple.  
+	From research to engineering and deployment, I would be honored to assist your talented team. 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	My Master’s degree in Deep Learning and a recent open-source project in audio transcription make me an excellent candidate for the Machine Learning Research (Speech), DMLI position at Apple ML. With a strong foundation in both research and practical deployment, I am eager to contribute to the development of cutting-edge speech translation technologies.
+	
+	In my Master’s thesis, I introduced a transformer-based deep learning network for the prediction of multiple possible futures. This unsupervised method learns a distribution over potential future states, with applications in areas such as speech translation. This experience, which involved deep learning toolkits and stochastic modeling, provided me with a solid foundation in both theoretical and applied machine learning. The project demonstrated my ability to approach complex problems and develop innovative solutions, as well as to evaluate these solutions against competing methods.
+	
+	Recently, I extended an open-source project—ROS 2 Whisper—to perform streaming audio transcription, leading to release of version 1.4. 
+	This work earned me admin rights to maintain the code base. 
+	I addressed challenges such as mid-word breaks and loss of context, which are also relevant in speech translation systems. 
+	To solve them, I employed a ring-buffer to hold audio data, transcribed the entire buffer in regular intervals, and used substring matching to align and update the existing transcript. 
+	This solution, implemented in C++ with modern techniques like multithreading and design patterns (e.g., composition, inheritance, and templates), demonstrated my ability to create efficient, scalable, and maintainable systems. 
+	While the device I chose to deploy on was an Nivida Jetson Orin, the back-end transcription network I used (Whisper CPP) was primarily designed for Apple silicon. 
+	This highlights my commitment to real-world deployment and my experience with existing speech recognition technologies. 
+	
+	These two experiences, both in research and engineering, have equipped me with the skills necessary to contribute to the development of state-of-the-art machine translation solutions at Apple. I am eager to collaborate with your talented team to further advance the field and address the challenges of machine translation in real-world applications. I would be honored to contribute to your innovative work.
+	
+	Thank you for considering my application. I look forward to the opportunity to discuss how I can contribute to the future of speech translation at Apple.
+	
+		
+	\end{comment}
+	
+
+	
+	
+	
+	\vspace{0.5cm}
+	\makeletterclosing
+	
+	
+	
+	
+\end{document}
