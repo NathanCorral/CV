@@ -14,7 +14,7 @@
 	\setlength{\itemsep}{\CVItemizeSpacing}  
 	\item Dieses Projekt implementiert Computer-Vision (CV) Aufgaben (Objekterkennung, Maskenbeschriftung pro Pixel) als parallele ROS 2-Knoten.
 	\item Modernste CV Modellen (wie DETR und Maskformer) sind von Hugging Face ~~~~~~~~~~~~ automatisch heruntergeladen.
-	\item Die Ergebnisse der CV Modellen, die auf verschiedenen Datensätzen trainiert  ~~~~~~~~~~~~~~ worden sein können, werden von einem globalen Server in einen universellen ~~~~~~~~~~~~~~ Index umgewandelt.  
+	\item Die Ergebnisse der CV Modellen, die auf verschiedenen Datensätzen trainiert  ~~~~~~~~~~~~~~ worden sein können, werden von einem globalen Server in einen universellen ~~~~~~~~~~~~~~ Index mit NoSQL umgewandelt.  
 	\item Diese Pipeline wird entweder auf eine Live-Kameraübertragung oder auf Bilder aus einem vorab trainierten Datensatz angewandt, wobei die Ergebnisse in Echtzeit angezeigt werden, um die durch die Modellwahl verursachte unterschiedliche Verzögerung zu verdeutlichen.
 \end{itemize}  
 
@@ -22,7 +22,7 @@
 \vspace{\CVItemizeHeaderSpacing} \begin{itemize}[leftmargin=*, rightmargin=1cm] 
 	\setlength{\itemsep}{\CVItemizeSpacing}  
 	\item Ich implementiere die ersten Schritte der Retrieval-Augmented Generation (RAG) (endet vor „Generation“).
-	\item Ich führe Web-Scraping, Datensatz Einbettung und Ähnlichkeitsbewertung durch, um Dateneinträge basierend auf einer Abfrage in natürlicher Sprache abzurufen.
+	\item Ich führe Web-Scraping, Datensatz (Apache Arrow) Einbettung und Ähnlichkeitsbewertung durch, um Dateneinträge basierend auf einer Abfrage in natürlicher Sprache abzurufen.
 \end{itemize}  
 \begin{comment}
 \entry*[2021] \textbf{Temporal Convolutional Network} \newline  
